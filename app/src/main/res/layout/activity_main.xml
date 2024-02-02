@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="#DFD8D8"
+    android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:text="My App"
+        android:textColor="#3C3434"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui sua ação"
+        android:textSize="16sp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textAutoComplete"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:layout_gravity="center">
+
+        <!-- Botão Cadastrar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="128sp"
+                android:text="Cadastrar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:background="#2196F3"
+                android:drawableTop="@drawable/baseline_create_24"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                />
+        </LinearLayout>
+
+        <!-- Botão Listar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="128sp"
+                android:text="Listar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:background="#4CAF50"
+                android:drawableTop="@drawable/baseline_article_24"
+                android:layout_marginBottom="8dp"
+                />
+        </LinearLayout>
+
+        <!-- Botão Relatório -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="128sp"
+                android:text="Relatório"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:background="#FF9800"
+                android:drawableTop="@drawable/baseline_article_24"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                />
+        </LinearLayout>
+
+        <!-- Botão Cupom -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="128sp"
+                android:text="Cupom"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:background="#E91E63"
+                android:drawableTop="@drawable/baseline_create_24"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar dados"
+        android:textSize="16dp"
+        >
+
+    </CheckBox>
+
+</LinearLayout>
