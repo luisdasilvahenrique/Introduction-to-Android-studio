@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">my_first_app</string>
+
+    <string name="text_header">Travel calculator app</string>
+
+    <string name="edit_distance">Distância da viagem</string>
+
+    <string name="text_total_km">Total em quilômetros</string>
+    <string name="edit_price">Preço</string>
+
+    <string name="text_price_liter">Preço por litro</string>
+    
+    
+    <string name="editAutonomy">Autonomia</string>
+    <string name="text_autonomy">Quilomêtros por litros</string>
+    
+    <string name="edit_ans">Seu gasto será de: </string>
+    <string name="text_result">R$: %d</string>
+
+    <string name="button_calculator">Calcular</string>
 </resources>
