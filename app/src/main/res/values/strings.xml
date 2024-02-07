@@ -9,13 +9,17 @@
     <string name="edit_price">Preço</string>
 
     <string name="text_price_liter">Preço por litro</string>
-    
-    
+
+
     <string name="editAutonomy">Autonomia</string>
     <string name="text_autonomy">Quilomêtros por litros</string>
-    
+
     <string name="edit_ans">Seu gasto será de: </string>
-    <string name="text_result">R$: %d</string>
+    <string name="text_result">R$ </string>
 
     <string name="button_calculator">Calcular</string>
+
+    <string name="check_fields">Por favor, preencha todos os campos</string>
+    <string name="not_division_zero">Não existe divisão por zero(0)</string>
+
 </resources>

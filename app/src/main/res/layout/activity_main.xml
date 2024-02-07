@@ -4,74 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:orientation="vertical"
     android:padding="8dp"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_header"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textSize="24dp"
         android:padding="6sp"
+        android:text="@string/text_header"
+        android:textSize="24dp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edit_distance"
-        android:layout_marginTop="16dp"
-        android:hint="@string/edit_distance"
-        android:padding="6dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="numberDecimal"/>
+        android:layout_marginTop="16dp"
+        android:hint="@string/edit_distance"
+        android:inputType="numberDecimal"
+        android:padding="6dp" />
 
     <TextView
         android:id="@+id/text_total_km"
-        android:text="@string/text_total_km"
-        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:text="@string/text_total_km"
+        android:textSize="24dp" />
 
     <EditText
         android:id="@+id/edit_price"
-        android:layout_marginTop="16dp"
-        android:hint="@string/edit_price"
-        android:padding="6dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="numberDecimal"/>
+        android:layout_marginTop="16dp"
+        android:hint="@string/edit_price"
+        android:inputType="numberDecimal"
+        android:padding="6dp" />
 
     <TextView
         android:id="@+id/text_price_liter"
-        android:text="@string/text_price_liter"
-        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:text="@string/text_price_liter"
+        android:textSize="24dp" />
 
     <EditText
         android:id="@+id/edit_autonomy"
-        android:layout_marginTop="16dp"
-        android:hint="@string/editAutonomy"
-        android:padding="6dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="numberDecimal"/>
+        android:layout_marginTop="16dp"
+        android:hint="@string/editAutonomy"
+        android:inputType="numberDecimal"
+        android:padding="6dp" />
 
     <TextView
         android:id="@+id/text_autonomy"
-        android:text="@string/text_autonomy"
-        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:text="@string/text_autonomy"
+        android:textSize="24dp" />
 
     <TextView
         android:id="@+id/edit_ans"
@@ -87,27 +87,29 @@
 
     <TextView
         android:id="@+id/text_result"
-        android:layout_width="91dp"
+        android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="2dp"
-        android:gravity="center"
+        android:gravity="left"
         android:paddingTop="25dp"
         android:text="@string/text_result"
         android:textColor="#0E9DE4"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+
+        />
 
     <Button
         android:id="@+id/button_calculator"
-        android:text="@string/button_calculator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:padding="22dp"
-        android:textAllCaps="true"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
-        android:textSize="22dp"/>
+        android:padding="22dp"
+        android:text="@string/button_calculator"
+        android:textAllCaps="true"
+        android:textSize="22dp" />
 
 </LinearLayout>
 
